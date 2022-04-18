@@ -5,7 +5,9 @@ use App\Http\Controllers\TaskController;
 
 Route::get('/',[TaskController::class,'index']);
 Route::post('/store',[TaskController::class,'store']);
-Route::post('delete/{id}',[Taskcontroller::class,'delete']);
+Route::delete('delete/{id}',[Taskcontroller::class,'delete']);
+Route::get('update/{id}',[Taskcontroller::class,'update']);
+Route::post('Edit/{id}',[Taskcontroller::class,'Edit']);
 
 
 
